@@ -1,0 +1,24 @@
+.Cal {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.container {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 500px;
+}
+
+.inputtxt,
+.outputtxt {
+  height: 50px;
+  width: 500px;
+  justify-content: center;
+}
+
+button {
+  size: 12px;
+}

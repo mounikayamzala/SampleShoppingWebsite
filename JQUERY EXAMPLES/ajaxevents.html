@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $("button").click((e) => {
+                document.write(`
+                        X  : ${e.clientX} <br>
+                        name: ${e.target.name} <br>
+                        class: ${e.target.className}
+                    `);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" id="UserName"></dd>
+            <dt>Email</dt>
+            <dd><input type="text" id="Email"></dd>
+            <dt>City</dt>
+            <dd>
+                <select id="City">
+                    <option>Delhi</option>
+                    <option>Hyd</option>
+                </select>
+            </dd>
+            <dt>Subscribed</dt>
+            <dd><input type="checkbox" id="Subscribe"> Yes </dd>
+        </dl>
+        <button name="btnRegister" value="Register" class="btn btn-primary">Register</button>
+    </div>
+</body>
+
+</html>

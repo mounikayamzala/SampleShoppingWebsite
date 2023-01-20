@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <script>
+        function bodyload() {
+            fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY&quot')
+                .then(function (response) { response.json(); })
+                .then(function (data) {
+                    for (var items of data.photos) {
+                        trow = document.createElement("tr");
+                        tdid = document.createElement("td");
+                        tdcamera = document.createElement("td");
+                        tdimg = document.createElement("tr");
+                        tdrover = document.createElement("tr");
+
+                        tdid.innerHTML = items.id;
+                        tdcamera.innerHTML = items.camera.full_name;
+                        tdimg.innerHTML = `<img src=${items.img_src} width="100" height="100">`;
+                        tdrover.innerHTML = items.rover.landing_date;
+
+                        trow.appenchild(tdid);
+                        trow.appenchild(tdcamera);
+                        trow.appenchild(tdimg);
+                        trow.appenchild(tdrover);
+
+                        document.querySelector("tbody").appendChild(trow);
+
+
+                    }
+
+                })
+        }
+
+
+    </script>
+</head>
+
+<body class="container-fluid" onload="bodyload()">
+
+    <h2 class="bg bg-black">Mars Rover Photos</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Photo Id</th>
+                <th>Preview</th>
+                <th>Camera Name</th>
+                <th>Rover Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</html>

@@ -1,0 +1,5 @@
+[
+    { "Name": "samsung", "price": 300, "stock": "available" },
+    { "Name": "LT", "price": 400, "stock": "available" },
+    { "Name": "Whirpool", "price": 800, "stock": "available" }
+]

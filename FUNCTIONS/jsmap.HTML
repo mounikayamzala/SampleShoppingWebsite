@@ -1,0 +1,22 @@
+<script>
+
+    var members = [
+        {
+            "Name": "Mounika Y",
+            "age": 28
+        },
+        {
+            "Name": "Vamshi Y",
+            "age": 31
+        }
+    ];
+
+    var NamesArr = members.map(function (value) { return value.Name; })
+    document.write(`[${NamesArr}] <br>`);
+
+    var cities = ["Hyd", "ahdbkabcd", "adbcauco"];
+    var Newcities = cities.map(function (value) { return value + "-New"; })
+
+    document.write(`${Newcities}`)
+
+</script>

@@ -1,0 +1,20 @@
+<script>
+
+    function Parent() {
+
+        var x = 20;
+        function child() {
+            var y = 10;
+            return x + y;
+        }
+        document.write("child result is " + child());
+
+        return child() * 2;
+
+    }
+    document.write("parent result is " + Parent());
+
+
+
+
+</script>

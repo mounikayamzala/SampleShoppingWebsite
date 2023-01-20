@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>\
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script src="../node_modules/jquery.cookie/jquery.cookie.js"></script>
+    <script>
+        $(function () {
+            $("#btnlogin").click(() => {
+                $.cookie("username", $("#username").val());
+                location.href = "shopping.html";
+
+
+            })
+        })
+
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <dl>
+        <dt> username</dt>
+        <dd> <input type="text" id="username"></dd>
+
+        <dt>password</dt>
+        <dd><input type="text"></dd>
+    </dl>
+    <button id="btnlogin">Login</button>
+    <a href="index.html"> Back to Index</a>
+</body>
+
+</html>

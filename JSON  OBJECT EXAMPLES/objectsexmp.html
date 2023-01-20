@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var products = {
+            Name: "",
+            Price: 0,
+            qty: 0,
+            total: function () { return this.qty * this.price; },
+            print: function () { document.write(`Name: ${this.Name} <br> Price: ${this.Price} <br> ${this.qty}`); }
+        };
+
+        products.Name = prompt("Enter Name");
+        products.Price = parseFloat(prompt("Enter Price"));
+        products.qty = parseInt(prompt("Enter Quantity"));
+        products.print();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

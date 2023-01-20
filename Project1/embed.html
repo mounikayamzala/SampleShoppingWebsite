@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Embed Example</title>
+</head>
+<style>
+    header {
+        text-align: center;
+        background-color: tomato;
+        font-size: 30px;
+        height: 70px;
+
+        text-align: center;
+        line-height: 70px;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+    }
+
+    li {
+        padding: 10px;
+        background-color: tomato;
+        list-style: none;
+        width: 150px;
+        margin-bottom: 2px;
+        border-radius: 10px;
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .framebody {
+        width: 600px;
+        height: 600px;
+    }
+</style>
+
+<body>
+    <header>
+        Online Shopping
+
+    </header>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html" target="framebody">Home </a></li>
+                    <li> <a href="https://www.youtube.com/embed/r-cvZL056yg" target="framebody">Women Fashion </a></li>
+                    <li><a href="https://www.youtube.com/embed/nb4ovfwqup8" target="framebody"> Electronics </a></li>
+                    <li><a href="https://www.youtube.com/embed/amoRRUX6qNc" target="framebody"> Furniture </a></li>
+                    <li><a href="https://www.youtube.com/embed/McQdX_50lk4" target="framebody">Kitchen </a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="frame">
+            <main>
+                <iframe class="framebody" name="framebody">
+
+                </iframe>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

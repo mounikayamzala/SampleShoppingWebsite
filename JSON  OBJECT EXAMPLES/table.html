@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function
+            loadtable() {
+            var product = [
+                { Name: "Winter Jacket", Price: 5000.44 },
+                { Name: "Nike Casuals", Price: 6000.44 },
+                { Name: "Lee Boot", Price: 3400.44 }
+            ]
+            for (var item of product) {
+                trow = document.createElement("tr");
+                tdname = document.createElement("td");
+                tdprice = document.createElement("td");
+                tdname.innerHTML = item.Name;
+                tdprice.innerHTML = item.Price;
+                trow.appendChild(tdname);
+                trow.appendChild(tdprice);
+                document.querySelector("tbody").appendChild(trow);
+
+
+            }
+        }
+
+        function pageload() {
+            loadtable();
+        }
+
+    </script>
+</head>
+
+<body class="container-fluid">
+    <button onclick="loadtable()"> Load Table</button>
+    <div>
+        <table class="table table-hover">
+            <thead>
+                Displaying Product Details
+            </thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

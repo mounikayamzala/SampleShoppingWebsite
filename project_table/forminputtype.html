@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        .container {}
+
+        .checkbox {
+            border: 7px solid gray;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            height: 500px;
+            width: 200px;
+            overflow: auto;
+
+        }
+        .olist
+        {
+            list-style: none;
+        }
+
+        .term:checked+span
+        {
+            color: green;
+        }
+
+        .term+span
+        {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <form>
+            <label for="mobileno"> Mobile Number</label>
+            <input id="mobileno" type="text" name="Mobile No" pattern="\+91\d{10}">
+            <button> Submit</button>
+            </br>
+            </br>
+            <label for="password"> Password </label>
+            <input id="password" type="password">
+            <button> Submit</button>
+            </br>
+            </br>
+
+            <label for="range"> Range </label>
+            <input id="range" type="range">
+            </br>
+            </br>
+
+            <label for="fileinput"> File Input </label>
+            <input id="fileinput" type="file">
+
+            </br>
+            </br>
+
+
+            <div class="radio">
+                <label for="female"> Female </label>
+                <input name="gender" id="female" type="radio">
+
+                <label for="male"> male </label>
+                <input name="gender" id="male" type="radio" checked>
+            </div>
+
+            </br>
+            </br>
+
+            <div class="checkbox">
+
+                <ol class="olist">
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                    <li><input type="checkbox"> Java</li>
+                    <li><input type="checkbox"> SQL</li>
+                    <li><input type="checkbox"> python</li>
+                    <li><input type="checkbox"> Oracle</li>
+
+                </ol>
+                <button> Submit</button>
+
+            </div>
+        </br>
+
+            <div >
+                <input class="term" type="checkbox"> <span> I Accept </span>
+            </div>
+            </br>
+            </br>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

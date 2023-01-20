@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Src/calculator.css">
+    <title>Document</title>
+    <style>
+        .container-fluid {
+
+            height: 80vh;
+            width: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+
+
+        button {
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            height: 70px;
+            padding: 2px;
+        }
+
+        .childbox {
+
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            height: 70%;
+            width: 70%;
+
+        }
+        }
+    </style>
+    <script>
+
+
+        function clearscr() {
+            document.getElementById("inputtxt").value = " ";
+            document.getElementById("resulttxt").value = " ";
+
+        }
+
+        function calculate() {
+            var result = document.getElementById("inputtxt").value;
+            var q = eval(result);
+
+            document.getElementById("resulttxt").value = q;
+
+        }
+
+        function display(value) {
+            document.getElementById("inputtxt").value += value;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid w-50  border-2">
+        <div class="childbox">
+            <div class="input">
+
+                <input type=" text" style="background-color: beige;" placeholder="Input" id="inputtxt">
+            </div>
+            <div class="output">
+                <input type="text" style="background-color: beige;" placeholder="OUTPUT" id="resulttxt">
+            </div>
+            <div class="Cal">
+
+                <button onclick=" clearscr()">DEL</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="display('+')">+</button>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

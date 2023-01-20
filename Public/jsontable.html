@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <title>Document</title>
+    <script>
+        var data = [];
+
+        function loadfunc() {
+
+            fetch('../jsondata/arraytabledata.json')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (result) { data = result })
+            for (var product of data) {
+                var trow = document.createElement("tr");
+                var tdname = document.createElement("td");
+                var tdprice = document.createElement("td");
+                var tdstock = document.createElement("td");
+
+                tdname.innerHTML = product.Name;
+                tdprice.innerHTML = product.price;
+                tdstock.innerHTML = product.stock;
+
+
+                trow.appendChild(tdname);
+                trow.appendChild(tdprice);
+                trow.appendChild(tdstock);
+
+                document.querySelector("tbody").appendChild(trow);
+
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <button onclick="loadfunc()"> Load Table on CLick</button>
+
+
+
+        <table class="table table-hover">
+            <thead>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

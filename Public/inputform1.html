@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+
+    <script>
+        function Registerclick() {
+            document.getElementById("lblname").innerHTML = document.getElementById("txtname").value;
+            document.getElementById("lblprice").innerHTML = document.getElementById("txtprice").value;
+            document.getElementById("lblmanuf").innerHTML = document.getElementById("txtdate").value;
+
+            document.getElementById("lblshipping").innerHTML = document.getElementById("lstshippedTo").value;
+            stock = document.getElementById("txtcheckbox").value;
+            if (stock.checked) {
+                document.getElementById("lblstock").innerHTML = "Available";
+            }
+            else {
+                document.getElementById("lblstock").innerHTML = "Out of  stock";
+            }
+
+
+        }
+
+    </script>
+
+</head>
+
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <h2>Product Register form</h2>
+            <div class="form-group">
+                <label> Name of Product</label>
+                <div>
+                    <input type="text" id="txtname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label> Manufcture date</label>
+                <div>
+                    <input type="date" id="txtdate" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label> Price</label>
+                <div>
+                    <input type="text" id="txtprice" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label> stock</label>
+                <div>
+                    <input type="checkbox" class="form-check-input" id="txtcheckbox" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label> Shipping Available</label>
+                <div>
+                    <select class="form-control" id="lstshippedTo">
+                        <option>Select</option>
+                        <option>Hyderabad</option>
+                        <option>Delhi</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="Registerclick()" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div class="col-9">
+            <h2>Product Details</h2>
+            <table class="table table-bordered table-primary">
+                <colgroup span="1">
+                </colgroup>
+                <tr>
+                    <td> Name</td>
+                    <td id="lblname"> </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Manf</td>
+                    <td id="lblmanuf"></td>
+                </tr>
+
+                <tr>
+                    <td> Price</td>
+                    <td id="lblprice"></td>
+                </tr>
+
+                <tr>
+                    <td> Stock</td>
+                    <td id="lblstock"></td>
+
+                </tr>
+
+                <tr>
+                    <td> Shipping Availabe to</td>
+                    <td id="lblshipping"></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

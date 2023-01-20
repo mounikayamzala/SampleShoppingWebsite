@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function onclick() {
+            var txt = ["ajsuaso", "akjshuhxu", "kajsouao"];
+
+
+            for (var item of txt) {
+                var exp = document.createElement("li");
+                exp.innerHTML = item;
+                document.querySelector("ol").appendChild(exp);
+
+
+                var opt = document.createElement("option");
+                opt.innerText = item;
+                opt.value = item;
+                document.querySelector("select").appendChild(opt);
+
+
+            };
+
+
+        }
+
+
+        7438552990
+    </script>
+</head>
+
+<body onload="onclick()">
+
+
+    <ol>
+
+    </ol>
+
+
+    <select id="dropdown">
+    </select>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

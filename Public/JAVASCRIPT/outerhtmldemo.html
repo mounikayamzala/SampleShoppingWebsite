@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <style>
+        .effects {
+            background-color: yellow;
+        }
+    </style>
+    <title>Reference</title>
+    <script type="text/javascript">
+        function DeleteClick() {
+            x = confirm("Are you sure want to Delete?");
+            if (x == true) {
+                document.getElementById("msg").outerHTML = "<h2><font color = 'red' > Record Deleted</font ></h2 > ";
+
+            } else {
+                alert("Canceled..");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <p align="center" id="msg"></p>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

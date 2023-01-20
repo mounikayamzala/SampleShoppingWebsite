@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function createimage() {
+            var pic = document.createElement("img");
+            pic.width = "100";
+            pic.height = "100";
+            pic.border = "2";
+            pic.src = "../assest/flipkarticon.png";
+            document.querySelector("div").appendChild(pic);
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="createimage()"> Create Image</button>
+    <div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <srcipt src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></srcipt>
+</body>
+
+</html>

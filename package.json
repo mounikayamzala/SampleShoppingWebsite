@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
+    "jquery": "^3.6.1",
+    "jquery.cookie": "^1.4.1",
+    "nodejs": "^0.0.0"
+  }
+}

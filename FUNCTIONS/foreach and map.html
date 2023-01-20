@@ -1,0 +1,20 @@
+<script>
+    var cities = ["Hyd", "Goa", "Delhi", "Bangalore", "Chennai"]
+    var NewCities = cities.forEach(function (value, i, arr) {
+        document.write(`${value} ${i}   ${arr} <br> `);
+    })
+
+    var num = [1, 2, 3];
+    var newnum1 = num.forEach(n => {
+        console.log(n * 2);
+    });
+    console.log(newnum1);
+    var newnum2 = num.map(function (value) {
+        res = value * 2;
+        return res;
+    })
+    console.log(newnum2);
+
+
+
+</script>

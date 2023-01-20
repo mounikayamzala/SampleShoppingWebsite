@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str1 = {
+            "Name": "",
+            "price": 0,
+            "stock": false
+        }
+        str1.Name = prompt("Enter Name");
+        str1.price = parseFloat(prompt("ENter Price"));
+        str1.stock = (prompt("enter stock") == "true") ? true : false;
+        document.write(` Name: ${str1.Name} <br> Price: ${str1.price} <br> Price: ${str1.stock}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        function onbodyload() {
+            document.getElementById("msg").innerHTML = (navigator.cookieEnabled == true) ? "" : "Please enable Cookie on your browser";
+        }
+    </script>
+    <title>Document</title>
+
+</head>
+
+<body onload="onbodyload()">
+
+    <div id="msg"></div>
+
+    <a href="shopping.html"> Shopping </a>
+    <span>|</span>
+
+    <a href="login.html">Login</a>
+
+</body>
+
+</html>

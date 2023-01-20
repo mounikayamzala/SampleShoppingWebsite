@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Print Demo</title>
+  <script>
+    function bodyload() {
+      window.document.forms[0].elements[1].value = "Register";
+    }
+  </script>
+</head>
+
+<body onload="bodyload()">
+  <div>
+    <h2>Click PRINT BUTTON TO PRINT THE PAGE</h2>
+    <button onclick="window.print()">PRINT</button>
+  </div>
+
+  <div>
+    <form>
+      <h3>Register</h3>
+      USER NAME : <input type="text" /><input type="button" />
+    </form>
+  </div>
+
+  <div>
+    <form>
+      <h3>Login</h3>
+      EMail: <input type="email" /><input type="button" />
+    </form>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/js/dist/bootstrap.bundle.js"></script>
+</body>
+
+</html>

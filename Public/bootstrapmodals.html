@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <title>Modals</title>
+</head>
+
+<body class="container-fluid">
+  <button data-bs-target="#LOGIN" data-bs-toggle="modal" class="btn btn-primary">
+    LOGIN
+  </button>
+
+  <div class="modal fade" id="LOGIN">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">User Login Page</div>
+        <div class="modal-body">
+          <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" class="form-control" /></dd>
+            <dt>Password</dt>
+            <dd><input type="password" class="form-control" /></dd>
+          </dl>
+        </div>
+        <div class="modal-footer">
+          <button>Login</button>
+          <button data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

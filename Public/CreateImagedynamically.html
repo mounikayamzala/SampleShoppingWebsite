@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <title>Document</title>
+    <script>
+        function onloadingbtn() {
+            var pic = document.createElement("img");
+            pic.src = "../assest/Amazon Cards/Electronics.jpg";
+            pic.width = "100";
+            pic.height = "100";
+
+            document.querySelector("div").appendChild(pic);
+
+
+
+            var txt = ["All", "Electronics", "Fashion", "Home & Furniture"];
+            for (var items of txt) {
+                trtxt = document.createElement("tr");
+                tdtxt = document.createElement("td");
+                tdtxt.innerHTML = items;
+                trtxt.appendChild(tdtxt);
+                document.querySelector("tbody").appendChild(trtxt);
+
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <button class="btn btn-primary" onclick="onloadingbtn()">
+        Craete Image
+    </button>
+    <div class="mt-3 p-2">
+
+    </div>
+    <table border="1" width="300">
+        <thead>
+            Load Catogiries
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

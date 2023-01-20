@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<title>Responsive Layout</title>
+
+<style>
+header,footer,main,aside,nav
+{
+    margin: 2px;
+    border: 1px solid black;
+}
+
+
+
+@media screen  and (orientation:portrait) 
+
+{
+body
+{
+    display: grid;
+    grid-template-columns: 12fr;
+}
+
+header
+{
+grid-row: 1;
+grid-column: 1;
+}
+
+main
+{
+grid-row: 3;
+grid-column: 1;
+}
+
+nav
+{
+grid-column: 1;
+grid-row: 2;
+}
+
+footer
+{
+grid-row:5;
+grid-column: 1;
+}
+
+aside
+{
+grid-row: 4;
+grid-column: 1;
+}
+
+}
+@media screen  and (orientation:Landscape) 
+{
+body
+{
+    display: grid;
+    grid-template-columns: 3fr 7fr 2fr;
+}
+
+header
+{
+    grid-row: 1;
+    grid-column: 1/4;
+    text-align: center;
+
+}
+footer
+{
+grid-row: 3;
+    grid-column: 1/4;
+    text-align: center;
+
+}
+main
+{
+    grid-row: 2;
+    grid-column: 2/4;
+}
+aside
+{
+    grid-row: 2;
+    grid-column: 3/4;
+}
+nav
+{
+grid-row: 2;
+grid-column: 1/4;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <Span class="bi bi-cart-check" ></Span>Ebayshopping
+</header>
+<nav>
+    <div>Furniture</div>
+    <div>Electronics</div>
+    <div> Fashion</div>
+    
+</nav>
+<main>
+
+    <div>Unlimited Offers on Shopping</div>
+    <div> 20 % Offers on Electronics</div>
+
+</main>
+
+<aside>
+Advertisemenet  of Other Websites
+
+</aside>
+<footer>
+<div> &copy; copy right</div>
+</footer>
+</body>
+</html>
